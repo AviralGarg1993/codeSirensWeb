@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ae3f700-d8c4-4ecc-b0f4-8552c4a0a308" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editor.html" afterPath="$PROJECT_DIR$/editor.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -21,8 +20,8 @@
       <file leaf-file-name="editor.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/editor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="425">
+              <caret line="25" column="71" lean-forward="false" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -41,15 +40,15 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="306" column="53" lean-forward="false" selection-start-line="306" selection-start-column="53" selection-end-line="306" selection-end-column="53" />
+            <state relative-caret-position="289">
+              <caret line="94" column="25" lean-forward="false" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#p#3;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#3;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#select#0;n#div#2;n#div#3;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#5469#5475#0" expanded="true" />
-                <element signature="e#5475#5481#0" expanded="true" />
+                <element signature="e#5400#5406#0" expanded="true" />
+                <element signature="e#5406#5412#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,6 +130,7 @@
     <findStrings>
       <find>youtube</find>
       <find>yout</find>
+      <find>onstart</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -240,12 +240,12 @@
       <option name="presentableId" value="Default" />
       <updated>1508485794934</updated>
       <workItem from="1508485796417" duration="8822000" />
-      <workItem from="1508562939508" duration="11810000" />
+      <workItem from="1508562939508" duration="13152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20632000" />
+    <option name="totallyTimeSpent" value="21974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -352,8 +352,8 @@
             <element signature="n#style#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#3;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#0;n#div#2;n#div#3;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#5469#5475#0" expanded="true" />
-            <element signature="e#5475#5481#0" expanded="true" />
+            <element signature="e#5400#5406#0" expanded="true" />
+            <element signature="e#5406#5412#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -517,23 +517,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="306" column="53" lean-forward="false" selection-start-line="306" selection-start-column="53" selection-end-line="306" selection-end-column="53" />
+        <state relative-caret-position="289">
+          <caret line="94" column="25" lean-forward="false" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#p#3;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#3;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#select#0;n#div#2;n#div#3;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#5469#5475#0" expanded="true" />
-            <element signature="e#5475#5481#0" expanded="true" />
+            <element signature="e#5400#5406#0" expanded="true" />
+            <element signature="e#5406#5412#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/editor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        <state relative-caret-position="425">
+          <caret line="25" column="71" lean-forward="false" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
           <folding />
         </state>
       </provider>
