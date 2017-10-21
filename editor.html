@@ -23,11 +23,11 @@
 
 
 <pre id="editor">
-// Code Editor provision
+// Code Editor
 public class Solution {
 
     public static void main(String[] args) {
-        // Prints "Hello, World" to the terminal window.
+        // Prints "Hello, World"
         System.out.println("Hello, World");
     }
 
@@ -39,6 +39,48 @@ public class Solution {
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/github");
     editor.session.setMode("ace/mode/java");
+    function test(final, interim) {
+        console.log('final: ' + final);
+        console.log('interim: ' + interim);
+/*
+        function parseInterimString(s) {
+            var sentence = s.split(" ");
+            console.log(sentence);
+            for(t in sentence){
+                console.log("haha: " + t);
+            }
+        }
+
+        parseInterimString(interim);
+*/
+
+        function handlePrintCommand(sentence) {
+            console.log("print: " + sentence);
+            var word;
+            var printSentence ="";
+            for(word in sentence) {
+                printSentence += " " + sentence[word];
+            }
+            editor.insert('System.out.println("' +  printSentence + '");');
+        }
+
+        function parseFinalString(s) {
+            var sentence = s.split(" ");
+            console.log(sentence);
+            var i = 0;
+            var word;
+            for(word in sentence){
+                i++;
+                if(sentence[word] == 'print'){
+                    handlePrintCommand(sentence.slice(i));
+                }
+            }
+        }
+
+        if(final !="")
+            parseFinalString(final);
+
+    }
 </script>
 
 </body>

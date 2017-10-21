@@ -132,23 +132,25 @@
 </div>
 <div class="center">
     <div class="sidebyside" style="text-align:right">
-        <button id="copy_button" class="button" onclick="copyButton()">
+        <!--<button id="copy_button" class="button" onclick="copyButton()">
             Copy and Paste</button>
         <div id="copy_info" class="info">
             Press Control-C to copy text.<br>(Command-C on Mac.)
         </div>
+        -->
     </div>
     <div class="sidebyside">
-        <button id="email_button" class="button" onclick="emailButton()">
+        <!--<button id="email_button" class="button" onclick="emailButton()">
             Create Email</button>
         <div id="email_info" class="info">
             Text sent to default email application.<br>
             (See chrome://settings/handlers to change.)
         </div>
+        -->
     </div>
     <p>
-    <div id="div_language">
-        <select id="select_language" onchange="updateCountry()"></select>
+    <div id="div_language" style="visibility: hidden">
+        <select id="select_language" style="visibility: hidden" onchange="updateCountry()"></select>
         &nbsp;&nbsp;
         <select id="select_dialect"></select>
     </div>
@@ -302,6 +304,7 @@
                     interim_transcript += event.results[i][0].transcript;
                 }
             }
+            test(final_transcript, interim_transcript);
             final_transcript = capitalize(final_transcript);
             final_span.innerHTML = linebreak(final_transcript);
             interim_span.innerHTML = linebreak(interim_transcript);
