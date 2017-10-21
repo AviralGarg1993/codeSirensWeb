@@ -1,0 +1,24 @@
+
+.questionFont{
+    font-family: 'Ubuntu Mono', monospace;
+    color: #272822;
+  }
+#show-data{
+  font-family: 'Ubuntu Mono', monospace;
+    color: #272822;
+}
+#listOfQ{
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 22px;
+  margin: 10px 0px 10px 20px;
+  color: grey;
+    overflow: auto;
+}
+
+button#soSearch{
+    background: transparent;
+    border: transparent;
+    color: #272822;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+}

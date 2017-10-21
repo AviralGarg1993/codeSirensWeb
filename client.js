@@ -21,18 +21,12 @@ var config = {
                 componentState : {
                     label : 'A'
                 }
-            }, {
-                type : 'component',
-                componentName : 'codeEditorOutput',
-                componentState : {
-                    label : 'D'
-                }
             } ]
         }, {
             type : 'column',
             content : [ {
                 type : 'component',
-                componentName : 'youtube',
+                componentName : 'notes.md',
                 componentState : {
                     label : 'B'
                 }
@@ -72,38 +66,30 @@ myLayout.registerComponent('codeEditorInput', function (container) {
                 container.getElement().html(data);
             })
             .fail(function (jqXHR, textStatus, errorThrown) {
-                throw 'Youtube module could not be loaded.';
+                throw 'Code Editor module could not be loaded.';
             });
     }
 
     integrateCodeEditor(container);
 });
 
-myLayout.registerComponent('codeEditorOutput', function (container) {
-    // To-DO: @alec: Must change the following code
-    window.setInterval(function () {
-        var outputDiv = $('div#outConsole.jumbotron.wordBreak')[0];
-        container.getElement().html(outputDiv);
-    }, 100);
-});
-
 // Registering Youtube component
-myLayout.registerComponent('youtube', function (container) {
-    function integrateYoutube(container) {
+myLayout.registerComponent('notes.md', function (container) {
+    function integrateNotes(container) {
         $.ajax({
             type: 'GET',
-            url: 'youtube.html'
+            url: 'notes.html'
         })
             .done(function (data, textStatus, jqXHR) {
                 container.getElement().html(data);
             })
             .fail(function (jqXHR, textStatus, errorThrown) {
-                throw 'Youtube module could not be loaded.';
+                throw 'Notes module could not be loaded.';
             });
         
     }
 
-    integrateYoutube(container);
+    integrateNotes(container);
 });
 
 myLayout.registerComponent('StackOverflow', function (container) {

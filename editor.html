@@ -19,36 +19,12 @@
     }
   </style>
 </head>
-<script>
-    $(document).ready(function(){
-        //$("#run").click(function(){
-        console.log($("#editor").val());
-            var to_compile = {
-                "LanguageChoice": "4",
-                "Program": $("#editor").val(),
-                "Input": "",
-                "CompilerArgs" : ""
-            };
-
-
-            $.ajax ({
-                url: "http://rextester.com/rundotnet/api",
-                type: "POST",
-                data: to_compile
-            }).done(function(data) {
-                alert(JSON.stringify(data));
-            }).fail(function(data, err) {
-                alert("fail " + JSON.stringify(data) + " " + JSON.stringify(err));
-            });
-        //});
-    });
-</script>
 <body>
 
 
-<textarea id="editor">
-
-public class Rextester {
+<pre id="editor">
+// Code Editor provision
+public class Solution {
 
     public static void main(String[] args) {
         // Prints "Hello, World" to the terminal window.
@@ -57,12 +33,12 @@ public class Rextester {
 
 }
 
-</textarea>
+</pre>
 <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
     var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/twilight");
-    editor.session.setMode("ace/mode/javascript");
+    editor.setTheme("ace/theme/github");
+    editor.session.setMode("ace/mode/java");
 </script>
 
 </body>
