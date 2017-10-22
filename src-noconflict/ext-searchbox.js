@@ -162,7 +162,7 @@ var MAX_COUNT = 999;
 
 dom.importCssString(searchboxCss, "ace_searchbox");
 
-var html = '<div class="ace_search right">\
+var html = '<div class="ace_search left">\
     <span action="hide" class="ace_searchbtn_close"></span>\
     <div class="ace_search_form">\
         <input class="ace_search_field" placeholder="Search for" spellcheck="false"></input>\

@@ -26,7 +26,7 @@ var config = {
             type : 'column',
             content : [ {
                 type : 'component',
-                componentName : 'notes.md',
+                componentName : 'speech',
                 componentState : {
                     label : 'B'
                 }
@@ -74,11 +74,11 @@ myLayout.registerComponent('codeEditorInput', function (container) {
 });
 
 // Registering Youtube component
-myLayout.registerComponent('notes.md', function (container) {
+myLayout.registerComponent('speech', function (container) {
     function integrateNotes(container) {
         $.ajax({
             type: 'GET',
-            url: 'notes.html'
+            url: 'speech.html'
         })
             .done(function (data, textStatus, jqXHR) {
                 container.getElement().html(data);

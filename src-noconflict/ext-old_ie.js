@@ -152,7 +152,7 @@ var keyUtil = require("../lib/keys");
 
 dom.importCssString(searchboxCss, "ace_searchbox");
 
-var html = '<div class="ace_search right">\
+var html = '<div class="ace_search left">\
     <button type="button" action="hide" class="ace_searchbtn_close"></button>\
     <div class="ace_search_form">\
         <input class="ace_search_field" placeholder="Search for" spellcheck="false"></input>\
